@@ -3,8 +3,9 @@ version: '3.4'
 services:
   techchallenge.webapi:
     environment:
-      - ASPNETCORE_ENVIRONMENT=Development
-      - ASPNETCORE_URLS=https://+:443;http://+:80
+      - ASPNETCORE_ENVIRONMENT=LocalDocker
+      - ASPNETCORE_URLS=http://+:80
+      #- ASPNETCORE_URLS=https://+:443;http://+:80
     ports:
       - "80"
       - "443"

@@ -16,13 +16,13 @@ CREATE TABLE `categories` (
 
 CREATE TABLE `jobs` (
     `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-    `status` varchar(50) NOT NULL DEFAULT 'new',
+    `status` varchar(50) NOT NULL DEFAULT 'New',
     `suburb_id` int(11) unsigned NOT NULL,
     `category_id` int(11) unsigned NOT NULL,
     `contact_name` varchar(255) NOT NULL,
     `contact_phone` varchar(255) NOT NULL,
     `contact_email` varchar(255) NOT NULL,
-    `price` int(3) unsigned NOT NULL,
+    `price` double(5,2) unsigned NOT NULL,
     `description` text NOT NULL,
     `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     `updated_at` TIMESTAMP NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP,
