@@ -2,7 +2,6 @@
 using System.Threading.Tasks;
 using MediatR;
 using TechChallenge.Application.Common;
-using TechChallenge.Domain.Interfaces;
 
 namespace TechChallenge.Application.LeadManagement.Commands
 {

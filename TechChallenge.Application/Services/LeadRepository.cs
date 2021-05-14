@@ -4,7 +4,6 @@ using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using TechChallenge.Application.Interfaces;
-using TechChallenge.Domain.Interfaces;
 using TechChallenge.Domain.LeadManagement;
 
 namespace TechChallenge.Application.Services

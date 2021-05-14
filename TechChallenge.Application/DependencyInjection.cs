@@ -3,7 +3,6 @@ using Microsoft.Extensions.DependencyInjection;
 using MediatR;
 using TechChallenge.Application.Services;
 using TechChallenge.Domain.Common;
-using TechChallenge.Domain.Interfaces;
 
 namespace TechChallenge.Application
 {

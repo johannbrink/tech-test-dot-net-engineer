@@ -3,7 +3,6 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using MediatR;
-using TechChallenge.Domain.Interfaces;
 using TechChallenge.Domain.LeadManagement;
 
 namespace TechChallenge.Application.LeadManagement.Queries

@@ -1,9 +1,9 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using TechChallenge.Domain.LeadManagement;
 
-namespace TechChallenge.Domain.Interfaces
+namespace TechChallenge.Application
 {
     public interface ILeadRepository
     {
