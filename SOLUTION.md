@@ -6,7 +6,6 @@ I chose the "Onion" architecture which has the Business Domain at the centre of 
 #### Domain Layer
 This layer is designed based on DDD principles It is not dependent on any other Layers. It contains the following types of classes:
 * Business Entities
-* Interfaces for repositories (To be implemented in Application Layer)
 * Domain Events for communication between bounded contexts
 * Value objects
 #### Application Layer
@@ -14,11 +13,11 @@ This layer contains concepts that the application uses to communicate between it
 * CQRS Queries and QueryHandlers
 * CQRS Commands and Command Handlers
 * DTO models used in the API responses
-* Repository Implementation
-* DB Context Interfaces (To be implemented in Infrastructure Layer)
+* Interfaces for repositories (To be implemented in Application Layer)
 
 #### Infrastructure Layer
 This layer is responsible for the concrete implementation of DBContext and is dependent on MySQL. It contains:
+* Repository Implementation
 * DBContext Implementation
 #### WebApi Layer
 That layer is responsible for serving clients over Http. It contains:
