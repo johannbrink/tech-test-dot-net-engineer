@@ -7,10 +7,6 @@ namespace TechChallenge.Domain.LeadManagement
         public string Name { get; }
         public string PostCode { get; }
 
-        private Suburb()
-        {
-        }
-
         public Suburb(string name, string postCode)
         {
             Name = name;

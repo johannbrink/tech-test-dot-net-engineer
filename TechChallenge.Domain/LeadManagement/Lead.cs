@@ -2,6 +2,8 @@
 using TechChallenge.Domain.Common;
 using TechChallenge.Domain.DomainEvents;
 using TechChallenge.Domain.ValueObjects;
+// ReSharper disable UnassignedGetOnlyAutoProperty
+// EntityFramework
 
 namespace TechChallenge.Domain.LeadManagement
 {
@@ -17,10 +19,6 @@ namespace TechChallenge.Domain.LeadManagement
         public string Description { get;  }
         public DateTime CreatedAt { get; }
         public DateTime UpdatedAt { get;  }
-
-        private Lead()
-        {
-        }
 
         public Lead(Category category, Suburb suburb, Contact contact, Amount price)
         {

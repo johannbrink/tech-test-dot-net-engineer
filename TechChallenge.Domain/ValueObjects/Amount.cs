@@ -7,10 +7,6 @@ namespace TechChallenge.Domain.ValueObjects
     {
         public double Value { get; }
 
-        private Amount()
-        {
-        }
-
         public Amount(double value)
         {
             Value = value;

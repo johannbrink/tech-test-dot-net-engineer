@@ -7,10 +7,6 @@ namespace TechChallenge.Domain.LeadManagement
         public string Name { get; }
         public int ParentId { get; }
 
-        private Category()
-        {
-        }
-
         public Category(string name, int parentId)
         {
             Name = name;

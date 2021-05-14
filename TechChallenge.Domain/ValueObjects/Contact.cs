@@ -32,10 +32,6 @@ namespace TechChallenge.Domain.ValueObjects
 
         } 
 
-        private Contact()
-        {
-        }
-
         public Contact(string firstName, string lastName, string phoneNumber, string emailAddress)
         {
             FirstName = firstName;
