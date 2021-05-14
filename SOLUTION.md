@@ -13,7 +13,7 @@ This layer contains concepts that the application uses to communicate between it
 * CQRS Queries and QueryHandlers
 * CQRS Commands and Command Handlers
 * DTO models used in the API responses
-* Interfaces for repositories (To be implemented in Application Layer)
+* Interfaces for repositories (To be implemented in Infrastructure Layer)
 
 #### Infrastructure Layer
 This layer is responsible for the concrete implementation of DBContext and is dependent on MySQL. It contains:
