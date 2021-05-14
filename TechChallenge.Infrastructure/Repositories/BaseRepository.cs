@@ -1,6 +1,6 @@
 ﻿using TechChallenge.Domain.Common;
 
-namespace TechChallenge.Application
+namespace TechChallenge.Infrastructure.Repositories
 {
     public class BaseRepository
     {

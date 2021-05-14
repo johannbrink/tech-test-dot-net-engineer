@@ -1,8 +1,9 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using TechChallenge.Application;
 using TechChallenge.Infrastructure.Persistence;
-using Microsoft.EntityFrameworkCore;
-using TechChallenge.Application.Interfaces;
+using TechChallenge.Infrastructure.Repositories;
 
 namespace TechChallenge.Infrastructure
 {
@@ -12,7 +13,8 @@ namespace TechChallenge.Infrastructure
         {
                 services.AddDbContext<ApplicationDbContext>(options =>
                     options.UseMySQL(configuration.GetConnectionString("DefaultConnection")));
-                services.AddScoped<IApplicationDbContext>(provider => provider.GetService<ApplicationDbContext>());
+                services.AddScoped(provider => provider.GetService<ApplicationDbContext>());
+                services.AddTransient<ILeadRepository, LeadRepository>();
             return services;
         }
     }

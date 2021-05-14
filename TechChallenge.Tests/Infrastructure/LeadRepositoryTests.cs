@@ -1,9 +1,9 @@
 ﻿using System.Linq;
 using System.Threading;
 using FluentAssertions;
-using TechChallenge.Application.Services;
 using TechChallenge.Domain.Common;
 using TechChallenge.Domain.LeadManagement;
+using TechChallenge.Infrastructure.Repositories;
 using Xunit;
 
 namespace TechChallenge.Tests.Infrastructure

@@ -3,16 +3,17 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using TechChallenge.Application.Interfaces;
+using TechChallenge.Application;
 using TechChallenge.Domain.LeadManagement;
+using TechChallenge.Infrastructure.Persistence;
 
-namespace TechChallenge.Application.Services
+namespace TechChallenge.Infrastructure.Repositories
 {
     public class LeadRepository : BaseRepository, ILeadRepository
     {
-        private readonly IApplicationDbContext _dbContext;
+        private readonly ApplicationDbContext _dbContext;
 
-        public LeadRepository(IApplicationDbContext dbContext)
+        public LeadRepository(ApplicationDbContext dbContext)
         {
             _dbContext = dbContext;
         }

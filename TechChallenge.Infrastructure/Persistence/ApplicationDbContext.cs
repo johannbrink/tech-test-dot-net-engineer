@@ -1,11 +1,10 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
-using TechChallenge.Application.Interfaces;
 using TechChallenge.Domain.LeadManagement;
 
 namespace TechChallenge.Infrastructure.Persistence
 {
-    public class ApplicationDbContext : DbContext, IApplicationDbContext
+    public class ApplicationDbContext : DbContext
     {
         public ApplicationDbContext()
         {
